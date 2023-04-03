@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'screens/contact_me_screen.dart';
 import 'screens/intro_screen.dart';
@@ -44,6 +46,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  bool ishovering = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -163,13 +166,18 @@ class _MyHomePageState extends State<MyHomePage> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
-                              Padding(
-                                padding: const EdgeInsets.only(top: 32.0),
-                                child: Text(
-                                  'My Work',
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 40,
+                              Container(
+                                transform: Matrix4.identity()
+                                  ..scale(3)
+                                  ..translate(-45, scrollOffset * 0.08),
+                                child: Padding(
+                                  padding: const EdgeInsets.only(top: 32.0),
+                                  child: Text(
+                                    'My Work',
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 40,
+                                    ),
                                   ),
                                 ),
                               ),
@@ -180,7 +188,8 @@ class _MyHomePageState extends State<MyHomePage> {
                                   child: Column(
                                     mainAxisAlignment:
                                         MainAxisAlignment.spaceEvenly,
-                                    crossAxisAlignment: CrossAxisAlignment.end,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.center,
                                     children: [
                                       //   MyWorkIllustration(
                                       //     asset: 'assets/insta.png',
@@ -206,25 +215,50 @@ class _MyHomePageState extends State<MyHomePage> {
                                       //       MediaQuery.of(context).size.height *
                                       //           0.6,
                                       // ),
-                                      SizedBox(
-                                        height: ((0) + scrollOffset * 0.5)
+                                      AnimatedContainer(
+                                        duration: Duration(milliseconds: 200),
+                                        curve: Curves.easeOut,
+                                        height: ((0) + scrollOffset * 0.62)
                                             .clamp(
                                                 0,
                                                 MediaQuery.of(context)
                                                     .size
                                                     .height),
-                                        child: LocationListItem(
-                                            imageUrl: 'assets/whatsapp.png'),
+                                        child: InkWell(
+                                          onTap: () {
+                                            print('clicked');
+                                          },
+                                          onHover: (value) {
+                                            setState(() {
+                                              ishovering = value;
+                                            });
+                                          },
+                                          child: Stack(
+                                            children: [
+                                              LocationListItem(
+                                                  imageUrl:
+                                                      'assets/whatsapp.png'),
+                                            ],
+                                          ),
+                                        ),
                                       ),
-                                      SizedBox(
-                                        height: ((0) + scrollOffset * 0.8)
+                                      AnimatedContainer(
+                                        duration: Duration(milliseconds: 200),
+                                        curve: Curves.easeOut,
+                                        height: ((-MediaQuery.of(context)
+                                                        .size
+                                                        .height /
+                                                    2) +
+                                                scrollOffset * 0.62 -
+                                                50)
                                             .clamp(
                                                 0,
                                                 MediaQuery.of(context)
                                                     .size
                                                     .height),
                                         child: LocationListItem(
-                                            imageUrl: 'assets/insta.png'),
+                                          imageUrl: 'assets/insta.png',
+                                        ),
                                       ),
                                     ],
                                   ),
@@ -252,24 +286,43 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 
-class LocationListItem extends StatelessWidget {
+class LocationListItem extends StatefulWidget {
   LocationListItem({
     super.key,
     required this.imageUrl,
   });
 
   final String imageUrl;
+
+  @override
+  State<LocationListItem> createState() => _LocationListItemState();
+}
+
+class _LocationListItemState extends State<LocationListItem> {
   final GlobalKey _backgroundImageKey = GlobalKey();
+
+  bool isHovering = false;
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
-      child: AspectRatio(
-        aspectRatio: 18 / 9,
-        child: ClipRRect(
-          borderRadius: BorderRadius.circular(16),
-          child: _buildParallaxBackground(context),
+    return InkWell(
+      onHover: (bool value) {
+        setState(() {
+          isHovering = value;
+        });
+      },
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 16),
+        child: AspectRatio(
+          aspectRatio: 18 / 9,
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(0),
+            child: Stack(
+              children: [
+                _buildParallaxBackground(context),
+              ],
+            ),
+          ),
         ),
       ),
     );
@@ -284,7 +337,7 @@ class LocationListItem extends StatelessWidget {
       ),
       children: [
         Image.asset(
-          imageUrl,
+          widget.imageUrl,
           key: _backgroundImageKey,
           fit: BoxFit.cover,
         ),

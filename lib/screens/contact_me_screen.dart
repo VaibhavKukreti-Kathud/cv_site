@@ -8,10 +8,8 @@ class ContactMeWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.black.withOpacity(1),
-      child: Container(
-        height: MediaQuery.of(context).size.height,
-      ),
+      height: MediaQuery.of(context).size.height,
+      child: Column(),
     );
   }
 }

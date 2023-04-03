@@ -100,17 +100,10 @@ class ReachMeOutWidget extends StatelessWidget {
                         ),
                         Padding(
                           padding: const EdgeInsets.only(left: 80),
-                          child: Container(
-                            decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              color: Colors.redAccent,
-                            ),
-                            padding: EdgeInsets.all(1.8),
-                            child: CircleAvatar(
-                              backgroundImage: AssetImage('assets/dp.jpg'),
-                              radius: 100,
-                              backgroundColor: Colors.red,
-                            ),
+                          child: CircleAvatar(
+                            backgroundImage: AssetImage('assets/dp.jpg'),
+                            radius: 100,
+                            backgroundColor: Colors.red,
                           ),
                         ),
                       ],
