@@ -1,4 +1,3 @@
-import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 
@@ -42,19 +41,12 @@ class _IntroductoryWidgetState extends State<IntroductoryWidget> {
                 child: Row(
                   children: [
                     Text('I am '),
-                    AnimatedTextKit(
-                      isRepeatingAnimation: false,
-                      pause: Duration(milliseconds: 10),
-                      animatedTexts: [
-                        TypewriterAnimatedText(
-                          'Vaibhav,',
-                          textStyle: TextStyle(
-                              fontSize: 85,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.red),
-                          speed: Duration(milliseconds: 200),
-                        ),
-                      ],
+                    Text(
+                      'Vaibhav',
+                      style: TextStyle(
+                          fontSize: 70,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.red),
                     ),
                   ],
                 ),

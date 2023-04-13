@@ -1,9 +1,4 @@
-import 'dart:ui';
-
-import 'package:animated_text_kit/animated_text_kit.dart';
 import 'screens/contact_me_screen.dart';
-import 'screens/intro_screen.dart';
-import 'screens/my_work_screen.dart';
 import 'screens/reach_me_out_screen.dart';
 import 'ui_constants.dart';
 import 'package:flutter/material.dart';
@@ -92,21 +87,12 @@ class _MyHomePageState extends State<MyHomePage> {
                                         child: Row(
                                           children: [
                                             Text('I am '),
-                                            AnimatedTextKit(
-                                              isRepeatingAnimation: false,
-                                              pause: Duration(milliseconds: 10),
-                                              animatedTexts: [
-                                                TypewriterAnimatedText(
-                                                  'Vaibhav,',
-                                                  textStyle: TextStyle(
-                                                      fontSize: 70,
-                                                      fontWeight:
-                                                          FontWeight.bold,
-                                                      color: Colors.red),
-                                                  speed: Duration(
-                                                      milliseconds: 200),
-                                                ),
-                                              ],
+                                            Text(
+                                              'Vaibhav',
+                                              style: TextStyle(
+                                                  fontSize: 70,
+                                                  fontWeight: FontWeight.bold,
+                                                  color: Colors.red),
                                             ),
                                           ],
                                         ),
