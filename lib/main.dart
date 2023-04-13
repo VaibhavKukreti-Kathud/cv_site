@@ -14,12 +14,9 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
-
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
       theme: ThemeData(
         textTheme: GoogleFonts.poppinsTextTheme().apply(
           displayColor: Colors.white,
@@ -93,7 +90,14 @@ class _MyHomePageState extends State<MyHomePage> {
                                                   fontSize: 70,
                                                   fontWeight: FontWeight.bold,
                                                   color: Colors.red),
-                                            ),
+                                            ).animate().fade().blurXY(
+                                                begin: 100,
+                                                end: 0,
+                                                delay:
+                                                    Duration(milliseconds: 200),
+                                                curve: Curves.easeOutCubic,
+                                                duration: Duration(
+                                                    milliseconds: 1300)),
                                           ],
                                         ),
                                       ),
@@ -222,8 +226,11 @@ class _MyHomePageState extends State<MyHomePage> {
                                           child: Stack(
                                             children: [
                                               LocationListItem(
-                                                  imageUrl:
-                                                      'assets/whatsapp.png'),
+                                                imageUrl: 'assets/whatsapp.png',
+                                                borderRadius:
+                                                    (scrollOffset * 0.019)
+                                                        .clamp(0, 40),
+                                              ),
                                             ],
                                           ),
                                         ),
@@ -244,6 +251,8 @@ class _MyHomePageState extends State<MyHomePage> {
                                                     .height),
                                         child: LocationListItem(
                                           imageUrl: 'assets/insta.png',
+                                          borderRadius: (scrollOffset * 0.012)
+                                              .clamp(0, 40),
                                         ),
                                       ),
                                     ],
@@ -276,9 +285,11 @@ class LocationListItem extends StatefulWidget {
   LocationListItem({
     super.key,
     required this.imageUrl,
+    required this.borderRadius,
   });
 
   final String imageUrl;
+  final double borderRadius;
 
   @override
   State<LocationListItem> createState() => _LocationListItemState();
@@ -302,7 +313,7 @@ class _LocationListItemState extends State<LocationListItem> {
         child: AspectRatio(
           aspectRatio: 18 / 9,
           child: ClipRRect(
-            borderRadius: BorderRadius.circular(0),
+            borderRadius: BorderRadius.circular(widget.borderRadius),
             child: Stack(
               children: [
                 _buildParallaxBackground(context),

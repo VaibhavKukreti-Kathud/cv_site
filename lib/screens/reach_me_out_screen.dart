@@ -29,16 +29,8 @@ class ReachMeOutWidget extends StatelessWidget {
                           margin: EdgeInsets.only(
                               top: 100, bottom: 20, left: 30, right: 40),
                           decoration: BoxDecoration(
-                            boxShadow: [
-                              BoxShadow(
-                                blurRadius: 60,
-                                color: Colors.red,
-                                spreadRadius: -30,
-                                offset: Offset(0, 20),
-                              ),
-                            ],
                             borderRadius: BorderRadius.circular(20),
-                            color: Color.fromARGB(255, 255, 255, 255),
+                            color: Color.fromARGB(255, 20, 20, 20),
                           ),
                         ),
                         Padding(
@@ -50,49 +42,55 @@ class ReachMeOutWidget extends StatelessWidget {
                               Text(
                                 'Vaibhav Kukreti',
                                 style: TextStyle(
-                                    fontSize: 30,
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.black),
+                                  fontSize: 30,
+                                  fontWeight: FontWeight.bold,
+                                  color: Color.fromARGB(255, 202, 202, 202),
+                                ),
                               ),
                               Text('18, Male',
                                   style: TextStyle(
                                       fontSize: 18,
                                       fontWeight: FontWeight.normal,
-                                      color: Colors.black.withOpacity(0.6))),
+                                      color:
+                                          Color.fromARGB(255, 183, 183, 183))),
                               SizedBox(
                                 height: 20,
                               ),
                               Text(
-                                  'I am a full stack Flutter developer. Persuing B.Tech in Computer Science from Vellore Insitute of Technology, Amravati. Been working on Flutter for more than 2 years and created more than 12 unique apps with great and distinct UI/UX.',
-                                  style: TextStyle(
-                                      fontSize: 20,
-                                      fontWeight: FontWeight.normal,
-                                      color: Colors.black)),
+                                'I am a full stack Flutter developer. Persuing B.Tech in Computer Science from Vellore Insitute of Technology, Amravati. Been working on Flutter for more than 2 years and created more than 12 unique apps with great and distinct UI/UX.',
+                                style: TextStyle(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.normal,
+                                  color: Color.fromARGB(255, 202, 202, 202),
+                                ),
+                              ),
                               SizedBox(height: 20),
                               Row(
                                 children: [
                                   Icon(LineAwesomeIcons.phone,
-                                      color: Colors.black.withOpacity(0.6)),
+                                      color:
+                                          Color.fromARGB(255, 183, 183, 183)),
                                   SizedBox(width: 10),
                                   Text('+91 7017846711',
                                       style: TextStyle(
                                           fontSize: 18,
                                           fontWeight: FontWeight.normal,
-                                          color:
-                                              Colors.black.withOpacity(0.6))),
+                                          color: Color.fromARGB(
+                                              255, 202, 202, 202))),
                                 ],
                               ),
                               Row(
                                 children: [
                                   Icon(LineAwesomeIcons.envelope,
-                                      color: Colors.black.withOpacity(0.6)),
+                                      color:
+                                          Color.fromARGB(255, 183, 183, 183)),
                                   SizedBox(width: 10),
                                   Text('vaibhavkukreti@icloud.com',
                                       style: TextStyle(
                                           fontSize: 18,
                                           fontWeight: FontWeight.normal,
-                                          color:
-                                              Colors.black.withOpacity(0.6))),
+                                          color: Color.fromARGB(
+                                              255, 202, 202, 202))),
                                 ],
                               ),
                             ],
@@ -103,7 +101,7 @@ class ReachMeOutWidget extends StatelessWidget {
                           child: CircleAvatar(
                             backgroundImage: AssetImage('assets/dp.jpg'),
                             radius: 100,
-                            backgroundColor: Colors.red,
+                            backgroundColor: Colors.black,
                           ),
                         ),
                       ],
@@ -171,7 +169,7 @@ class ReachMeOutWidget extends StatelessWidget {
             ),
           ),
           Spacer(),
-          Text('© Vaibhav Kukreti - 2022'),
+          Text('© Vaibhav Kukreti - 2023'),
           SizedBox(
             height: 20,
           ),
@@ -200,18 +198,20 @@ class ContactMeTile extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: 20),
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
-          color: themeColor,
+          color: Color.fromARGB(255, 20, 20, 20),
           boxShadow: [
             BoxShadow(
                 blurRadius: 50,
                 spreadRadius: -10,
                 offset: Offset(0, 20),
-                color: themeColor),
+                color: themeColor.withOpacity(0.3)),
           ]),
       child: Center(
         child: Row(
           children: [
-            icon,
+            Theme(
+                data: ThemeData(iconTheme: IconThemeData(color: themeColor)),
+                child: icon),
             SizedBox(width: 10),
             Text(title),
           ],
