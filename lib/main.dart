@@ -83,7 +83,12 @@ class _MyHomePageState extends State<MyHomePage> {
                                             color: Colors.white),
                                         child: Row(
                                           children: [
-                                            Text('I am '),
+                                            Text(
+                                              'I am ',
+                                              style: TextStyle(
+                                                  color: Color.fromARGB(
+                                                      255, 211, 211, 211)),
+                                            ),
                                             Text(
                                               'Vaibhav',
                                               style: TextStyle(
