@@ -52,100 +52,97 @@ class _MyHomePageState extends State<MyHomePage> {
                   children: [
                     ScrollTransformItem(builder: (scrollOffset) {
                       double opacity = scrollOffset * 0.02;
-                      return Container(
-                        child: AnimatedOpacity(
-                          opacity: 1 - (opacity > 1 ? 1 : opacity),
-                          duration: Duration(milliseconds: 100),
-                          child: Transform.translate(
-                            offset: Offset(-scrollOffset * 4, scrollOffset),
-                            child: SizedBox(
-                              height: MediaQuery.of(context).size.height,
-                              child: Padding(
-                                padding: const EdgeInsets.symmetric(
-                                    horizontal: 16.0),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    SizedBox(height: 100),
-                                    const Text(
-                                      'Hi there!',
-                                      style: TextStyle(fontSize: 32),
-                                    ),
-                                    SizedBox(height: 50),
-                                    AnimatedOpacity(
-                                      opacity: 1,
-                                      duration:
-                                          const Duration(milliseconds: 500),
-                                      child: DefaultTextStyle(
-                                        style: TextStyle(
-                                            fontSize: 60,
-                                            fontWeight: FontWeight.bold,
-                                            color: Colors.white),
-                                        child: Row(
-                                          children: [
-                                            Text(
-                                              'I am ',
-                                              style: TextStyle(
-                                                  color: Color.fromARGB(
-                                                      255, 211, 211, 211)),
-                                            ),
-                                            Text(
-                                              'Vaibhav',
-                                              style: TextStyle(
-                                                  fontSize: 70,
-                                                  fontWeight: FontWeight.bold,
-                                                  color: Colors.red),
-                                            ).animate().fade().blurXY(
-                                                begin: 100,
-                                                end: 0,
-                                                delay:
-                                                    Duration(milliseconds: 200),
-                                                curve: Curves.easeOutCubic,
-                                                duration: Duration(
-                                                    milliseconds: 1300)),
-                                          ],
-                                        ),
+                      return AnimatedOpacity(
+                        opacity: 1 - (opacity > 1 ? 1 : opacity),
+                        duration: Duration(milliseconds: 100),
+                        child: Transform.translate(
+                          offset: Offset(-scrollOffset * 4, scrollOffset),
+                          child: SizedBox(
+                            height: MediaQuery.of(context).size.height,
+                            child: Padding(
+                              padding:
+                                  const EdgeInsets.symmetric(horizontal: 16.0),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  SizedBox(height: 100),
+                                  const Text(
+                                    'Hi there!',
+                                    style: TextStyle(fontSize: 32),
+                                  ),
+                                  SizedBox(height: 50),
+                                  AnimatedOpacity(
+                                    opacity: 1,
+                                    duration: const Duration(milliseconds: 500),
+                                    child: DefaultTextStyle(
+                                      style: TextStyle(
+                                          fontSize: 60,
+                                          fontWeight: FontWeight.bold,
+                                          color: Colors.white),
+                                      child: Row(
+                                        children: [
+                                          Text(
+                                            'I am ',
+                                            style: TextStyle(
+                                                color: Color.fromARGB(
+                                                    255, 211, 211, 211)),
+                                          ),
+                                          Text(
+                                            'Vaibhav',
+                                            style: TextStyle(
+                                                fontSize: 70,
+                                                fontWeight: FontWeight.bold,
+                                                color: Colors.red),
+                                          ).animate().fade().blurXY(
+                                              begin: 100,
+                                              end: 0,
+                                              delay:
+                                                  Duration(milliseconds: 200),
+                                              curve: Curves.easeOutCubic,
+                                              duration:
+                                                  Duration(milliseconds: 1300)),
+                                        ],
                                       ),
                                     ),
-                                    SizedBox(height: 13),
-                                    const Text(
-                                      'An application developer and UI/UX Designer.',
-                                      style: TextStyle(
-                                          fontSize: 35, color: Colors.white70),
-                                    ),
-                                    const Text(
-                                      'Fluent in Dart, Flutter and Figma.',
-                                      style: TextStyle(
-                                          fontSize: 35, color: Colors.white70),
-                                    ),
-                                    const SizedBox(height: 50),
-                                    Spacer(),
-                                    Padding(
-                                      padding: const EdgeInsets.symmetric(
-                                          vertical: 16),
-                                      child: InkWell(
-                                        onTap: () {},
-                                        child: Row(
-                                          children: [
-                                            const Text(
-                                              'Swipe down',
-                                              textAlign: TextAlign.center,
-                                              style: TextStyle(
-                                                  color: Color.fromARGB(
-                                                      179, 255, 0, 0)),
-                                            ),
-                                            const SizedBox(width: 4),
-                                            Icon(
-                                              LineAwesomeIcons.angle_down,
-                                              size: 15,
-                                              color: Colors.red,
-                                            ),
-                                          ],
-                                        ),
+                                  ),
+                                  SizedBox(height: 13),
+                                  const Text(
+                                    'An application developer and UI/UX Designer.',
+                                    style: TextStyle(
+                                        fontSize: 35, color: Colors.white70),
+                                  ),
+                                  const Text(
+                                    'Fluent in Dart, Flutter and Figma.',
+                                    style: TextStyle(
+                                        fontSize: 35, color: Colors.white70),
+                                  ),
+                                  const SizedBox(height: 50),
+                                  Spacer(),
+                                  Padding(
+                                    padding: const EdgeInsets.symmetric(
+                                        vertical: 16),
+                                    child: InkWell(
+                                      onTap: () {},
+                                      child: Row(
+                                        children: [
+                                          const Text(
+                                            'Swipe down',
+                                            textAlign: TextAlign.center,
+                                            style: TextStyle(
+                                                color: Color.fromARGB(
+                                                    179, 255, 0, 0)),
+                                          ),
+                                          const SizedBox(width: 4),
+                                          Icon(
+                                            LineAwesomeIcons.angle_down,
+                                            size: 15,
+                                            color: Colors.red,
+                                          ),
+                                        ],
                                       ),
                                     ),
-                                  ],
-                                ),
+                                  ),
+                                ],
                               ),
                             ),
                           ),
