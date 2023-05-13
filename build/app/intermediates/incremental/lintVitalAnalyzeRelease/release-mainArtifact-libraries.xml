@@ -4,19 +4,6 @@
       jars="C:\Users\techy\Desktop\Kuch banara hu\Flutter Projects\cv_site\build\app\intermediates\flutter\release\libs.jar"
       resolved="__local_aars__:C:\Users\techy\Desktop\Kuch banara hu\Flutter Projects\cv_site\build\app\intermediates\flutter\release\libs.jar:unspecified"/>
   <library
-      name="C:\Users\techy\Desktop\Kuch banara hu\Flutter Projects\cv_site\android@@:sensors::release"
-      jars="C:\Users\techy\Desktop\Kuch banara hu\Flutter Projects\cv_site\build\sensors\.transforms\75fb722af2f513536d22c020efdba18a\transformed\out\jars\classes.jar"
-      resolved="io.flutter.plugins.sensors:sensors:unspecified"
-      folder="C:\Users\techy\Desktop\Kuch banara hu\Flutter Projects\cv_site\build\sensors\.transforms\75fb722af2f513536d22c020efdba18a\transformed\out"
-      manifest="AndroidManifest.xml"
-      resFolder="res"
-      assetsFolder="assets"
-      lintJar="lint.jar"
-      publicResources="public.txt"
-      symbolFile="R.txt"
-      externalAnnotations="annotations.zip"
-      proguardRules="proguard.txt"/>
-  <library
       name="C:\Users\techy\Desktop\Kuch banara hu\Flutter Projects\cv_site\android@@:path_provider_android::release"
       jars="C:\Users\techy\Desktop\Kuch banara hu\Flutter Projects\cv_site\build\path_provider_android\.transforms\c25d4ef15cd888f4551077c5c7de807a\transformed\out\jars\classes.jar"
       resolved="io.flutter.plugins.pathprovider:path_provider_android:unspecified"
@@ -30,9 +17,9 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="io.flutter:flutter_embedding_release:1.0.0-0f359063c487ee70787e58b4b011cbb3c2f53fd6@jar"
-      jars="C:\Users\techy\.gradle\caches\modules-2\files-2.1\io.flutter\flutter_embedding_release\1.0.0-0f359063c487ee70787e58b4b011cbb3c2f53fd6\e439a0aad1d9f1d03a6e75b57d735a1c318b5d72\flutter_embedding_release-1.0.0-0f359063c487ee70787e58b4b011cbb3c2f53fd6.jar"
-      resolved="io.flutter:flutter_embedding_release:1.0.0-0f359063c487ee70787e58b4b011cbb3c2f53fd6"/>
+      name="io.flutter:flutter_embedding_release:1.0.0-d44b5a94c976fbb65815374f61ab5392a220b084@jar"
+      jars="C:\Users\techy\.gradle\caches\modules-2\files-2.1\io.flutter\flutter_embedding_release\1.0.0-d44b5a94c976fbb65815374f61ab5392a220b084\9cba41c99092591788ce04ddd2ca65cc86ce15b8\flutter_embedding_release-1.0.0-d44b5a94c976fbb65815374f61ab5392a220b084.jar"
+      resolved="io.flutter:flutter_embedding_release:1.0.0-d44b5a94c976fbb65815374f61ab5392a220b084"/>
   <library
       name="androidx.window:window-java:1.0.0-beta04@aar"
       jars="C:\Users\techy\.gradle\caches\transforms-3\246793f755122fe14a5802655438cb75\transformed\jetified-window-java-1.0.0-beta04\jars\classes.jar"
@@ -76,17 +63,17 @@
       jars="C:\Users\techy\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib-jdk7\1.6.10\e1c380673654a089c4f0c9f83d0ddfdc1efdb498\kotlin-stdlib-jdk7-1.6.10.jar"
       resolved="org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.10"/>
   <library
-      name="io.flutter:armeabi_v7a_release:1.0.0-0f359063c487ee70787e58b4b011cbb3c2f53fd6@jar"
-      jars="C:\Users\techy\.gradle\caches\modules-2\files-2.1\io.flutter\armeabi_v7a_release\1.0.0-0f359063c487ee70787e58b4b011cbb3c2f53fd6\820fd77b9cf0640896129482b6280640df476312\armeabi_v7a_release-1.0.0-0f359063c487ee70787e58b4b011cbb3c2f53fd6.jar"
-      resolved="io.flutter:armeabi_v7a_release:1.0.0-0f359063c487ee70787e58b4b011cbb3c2f53fd6"/>
+      name="io.flutter:armeabi_v7a_release:1.0.0-d44b5a94c976fbb65815374f61ab5392a220b084@jar"
+      jars="C:\Users\techy\.gradle\caches\modules-2\files-2.1\io.flutter\armeabi_v7a_release\1.0.0-d44b5a94c976fbb65815374f61ab5392a220b084\be798ac70f6ec03e19a065fd52e31e30aebcf134\armeabi_v7a_release-1.0.0-d44b5a94c976fbb65815374f61ab5392a220b084.jar"
+      resolved="io.flutter:armeabi_v7a_release:1.0.0-d44b5a94c976fbb65815374f61ab5392a220b084"/>
   <library
-      name="io.flutter:arm64_v8a_release:1.0.0-0f359063c487ee70787e58b4b011cbb3c2f53fd6@jar"
-      jars="C:\Users\techy\.gradle\caches\modules-2\files-2.1\io.flutter\arm64_v8a_release\1.0.0-0f359063c487ee70787e58b4b011cbb3c2f53fd6\dbce6a29580a9aa2eea1f144d3a4ec636590186f\arm64_v8a_release-1.0.0-0f359063c487ee70787e58b4b011cbb3c2f53fd6.jar"
-      resolved="io.flutter:arm64_v8a_release:1.0.0-0f359063c487ee70787e58b4b011cbb3c2f53fd6"/>
+      name="io.flutter:arm64_v8a_release:1.0.0-d44b5a94c976fbb65815374f61ab5392a220b084@jar"
+      jars="C:\Users\techy\.gradle\caches\modules-2\files-2.1\io.flutter\arm64_v8a_release\1.0.0-d44b5a94c976fbb65815374f61ab5392a220b084\b294286ffc612be286161bd5cc525478dd04e47a\arm64_v8a_release-1.0.0-d44b5a94c976fbb65815374f61ab5392a220b084.jar"
+      resolved="io.flutter:arm64_v8a_release:1.0.0-d44b5a94c976fbb65815374f61ab5392a220b084"/>
   <library
-      name="io.flutter:x86_64_release:1.0.0-0f359063c487ee70787e58b4b011cbb3c2f53fd6@jar"
-      jars="C:\Users\techy\.gradle\caches\modules-2\files-2.1\io.flutter\x86_64_release\1.0.0-0f359063c487ee70787e58b4b011cbb3c2f53fd6\4fcf676a4785c7b01807ffffd4240ebcf744031b\x86_64_release-1.0.0-0f359063c487ee70787e58b4b011cbb3c2f53fd6.jar"
-      resolved="io.flutter:x86_64_release:1.0.0-0f359063c487ee70787e58b4b011cbb3c2f53fd6"/>
+      name="io.flutter:x86_64_release:1.0.0-d44b5a94c976fbb65815374f61ab5392a220b084@jar"
+      jars="C:\Users\techy\.gradle\caches\modules-2\files-2.1\io.flutter\x86_64_release\1.0.0-d44b5a94c976fbb65815374f61ab5392a220b084\56b44a0d2b9cd8b9e5c2446fe601b2c66f31098c\x86_64_release-1.0.0-d44b5a94c976fbb65815374f61ab5392a220b084.jar"
+      resolved="io.flutter:x86_64_release:1.0.0-d44b5a94c976fbb65815374f61ab5392a220b084"/>
   <library
       name="androidx.lifecycle:lifecycle-common-java8:2.2.0@jar"
       jars="C:\Users\techy\.gradle\caches\modules-2\files-2.1\androidx.lifecycle\lifecycle-common-java8\2.2.0\cd3478503da69b1a7e0319bd2d1389943db9b364\lifecycle-common-java8-2.2.0.jar"

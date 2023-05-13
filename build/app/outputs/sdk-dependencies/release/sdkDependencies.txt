@@ -3,31 +3,6 @@
 
 library {
   maven_library {
-    groupId: "io.flutter"
-    artifactId: "flutter_embedding_release"
-    version: "1.0.0-0f359063c487ee70787e58b4b011cbb3c2f53fd6"
-  }
-  digests {
-    sha256: "q9\342AP\342\304\a\021\'Z\232c\233\027p\332\3544lc{[\304B\036\227\325\020\220~\001"
-  }
-  repo_index {
-    value: 2
-  }
-}
-library {
-  maven_library {
-    groupId: "androidx.lifecycle"
-    artifactId: "lifecycle-common"
-    version: "2.2.0"
-  }
-  digests {
-    sha256: "c\211\215\253\367\317\345\354]~\330\270\302VL\024\'\276\207n\024\226\352\331\\\'\003\317Y\323sK"
-  }
-  repo_index {
-  }
-}
-library {
-  maven_library {
     groupId: "androidx.annotation"
     artifactId: "annotation"
     version: "1.5.0"
@@ -75,6 +50,31 @@ library {
   }
   repo_index {
     value: 1
+  }
+}
+library {
+  maven_library {
+    groupId: "io.flutter"
+    artifactId: "flutter_embedding_release"
+    version: "1.0.0-d44b5a94c976fbb65815374f61ab5392a220b084"
+  }
+  digests {
+    sha256: "\254e\356\340\a\242J\023y\354\2704\364#s\262\023<\237p\335\274\n\225\3700\300\t)\231V%"
+  }
+  repo_index {
+    value: 2
+  }
+}
+library {
+  maven_library {
+    groupId: "androidx.lifecycle"
+    artifactId: "lifecycle-common"
+    version: "2.2.0"
+  }
+  digests {
+    sha256: "c\211\215\253\367\317\345\354]~\330\270\302VL\024\'\276\207n\024\226\352\331\\\'\003\317Y\323sK"
+  }
+  repo_index {
   }
 }
 library {
@@ -383,10 +383,10 @@ library {
   maven_library {
     groupId: "io.flutter"
     artifactId: "armeabi_v7a_release"
-    version: "1.0.0-0f359063c487ee70787e58b4b011cbb3c2f53fd6"
+    version: "1.0.0-d44b5a94c976fbb65815374f61ab5392a220b084"
   }
   digests {
-    sha256: "T\377\340Y\316\3441R3K \005Q5Y\253\305,\222xhR\315\3312\217\230\233\340[\253A"
+    sha256: "1z\253\274\202\306\\v\364M\r\275,\340Z\364\035\330\021C\fqZ`\fS>\267\f_Cp"
   }
   repo_index {
     value: 2
@@ -396,10 +396,10 @@ library {
   maven_library {
     groupId: "io.flutter"
     artifactId: "arm64_v8a_release"
-    version: "1.0.0-0f359063c487ee70787e58b4b011cbb3c2f53fd6"
+    version: "1.0.0-d44b5a94c976fbb65815374f61ab5392a220b084"
   }
   digests {
-    sha256: "\223(TG\225\234[\301\205\004\350\232Z\270Px\004J\257\267\274\311\a}\222\350\225\021=\030\352\233"
+    sha256: "\322r\005\016\306\035\217\246%\321:\324\345j\'\341(\243\371\242b\031\362\331\206&p\016\t\242\276\271"
   }
   repo_index {
     value: 2
@@ -409,10 +409,10 @@ library {
   maven_library {
     groupId: "io.flutter"
     artifactId: "x86_64_release"
-    version: "1.0.0-0f359063c487ee70787e58b4b011cbb3c2f53fd6"
+    version: "1.0.0-d44b5a94c976fbb65815374f61ab5392a220b084"
   }
   digests {
-    sha256: "o\346\002Gh\357I\346\020\336Z\002b\357\234<\321o\214\311\177\253\243\v\350\357K\377\330\215\216\352"
+    sha256: "\223\314\340\212,k\214\203\256 \001T\300\036\367r\253b\360|\241O\243\303\037R@8\233j>F"
   }
   repo_index {
     value: 2
@@ -420,50 +420,50 @@ library {
 }
 library {
   digests {
-    sha256: "\006\001\r&\244\246}\2147p\317\243q\267=\224x\310ae1;mob\vK\332.\211\311d"
+    sha256: "\364\300\273\t?\326\005+\233\330\221\264\347C\302\307\233\341\204\271\224[\371aH\261tD%\352>="
   }
 }
 library_dependencies {
   library_dep_index: 1
+}
+library_dependencies {
+  library_index: 1
+  library_dep_index: 2
+  library_dep_index: 3
+}
+library_dependencies {
+  library_index: 4
+  library_dep_index: 5
   library_dep_index: 6
   library_dep_index: 7
   library_dep_index: 9
-  library_dep_index: 2
+  library_dep_index: 0
   library_dep_index: 23
   library_dep_index: 10
   library_dep_index: 24
 }
 library_dependencies {
-  library_index: 1
-  library_dep_index: 2
-}
-library_dependencies {
-  library_index: 2
-  library_dep_index: 3
-}
-library_dependencies {
-  library_index: 3
-  library_dep_index: 4
-  library_dep_index: 5
+  library_index: 5
+  library_dep_index: 0
 }
 library_dependencies {
   library_index: 6
-  library_dep_index: 1
-  library_dep_index: 2
+  library_dep_index: 5
+  library_dep_index: 0
 }
 library_dependencies {
   library_index: 7
-  library_dep_index: 1
+  library_dep_index: 5
   library_dep_index: 8
-  library_dep_index: 2
+  library_dep_index: 0
 }
 library_dependencies {
   library_index: 8
-  library_dep_index: 2
+  library_dep_index: 0
 }
 library_dependencies {
   library_index: 9
-  library_dep_index: 2
+  library_dep_index: 0
   library_dep_index: 10
   library_dep_index: 13
   library_dep_index: 14
@@ -473,7 +473,7 @@ library_dependencies {
 }
 library_dependencies {
   library_index: 10
-  library_dep_index: 2
+  library_dep_index: 0
   library_dep_index: 11
   library_dep_index: 7
   library_dep_index: 12
@@ -481,27 +481,27 @@ library_dependencies {
 }
 library_dependencies {
   library_index: 12
-  library_dep_index: 2
+  library_dep_index: 0
   library_dep_index: 13
 }
 library_dependencies {
   library_index: 13
-  library_dep_index: 2
+  library_dep_index: 0
 }
 library_dependencies {
   library_index: 14
-  library_dep_index: 2
+  library_dep_index: 0
   library_dep_index: 10
   library_dep_index: 15
 }
 library_dependencies {
   library_index: 15
-  library_dep_index: 2
+  library_dep_index: 0
   library_dep_index: 10
 }
 library_dependencies {
   library_index: 16
-  library_dep_index: 2
+  library_dep_index: 0
   library_dep_index: 10
   library_dep_index: 17
   library_dep_index: 20
@@ -514,22 +514,22 @@ library_dependencies {
 }
 library_dependencies {
   library_index: 18
-  library_dep_index: 2
+  library_dep_index: 0
   library_dep_index: 8
 }
 library_dependencies {
   library_index: 19
-  library_dep_index: 1
+  library_dep_index: 5
   library_dep_index: 8
   library_dep_index: 18
 }
 library_dependencies {
   library_index: 20
-  library_dep_index: 2
+  library_dep_index: 0
 }
 library_dependencies {
   library_index: 21
-  library_dep_index: 2
+  library_dep_index: 0
   library_dep_index: 10
   library_dep_index: 7
   library_dep_index: 20
@@ -537,17 +537,17 @@ library_dependencies {
 }
 library_dependencies {
   library_index: 22
-  library_dep_index: 2
+  library_dep_index: 0
   library_dep_index: 8
-  library_dep_index: 1
+  library_dep_index: 5
 }
 library_dependencies {
   library_index: 23
-  library_dep_index: 2
+  library_dep_index: 0
 }
 library_dependencies {
   library_index: 24
-  library_dep_index: 3
+  library_dep_index: 1
   library_dep_index: 25
   library_dep_index: 29
   library_dep_index: 10
@@ -559,22 +559,22 @@ library_dependencies {
 library_dependencies {
   library_index: 26
   library_dep_index: 27
-  library_dep_index: 4
+  library_dep_index: 2
 }
 library_dependencies {
   library_index: 27
-  library_dep_index: 3
+  library_dep_index: 1
   library_dep_index: 28
 }
 library_dependencies {
   library_index: 28
-  library_dep_index: 3
+  library_dep_index: 1
 }
 library_dependencies {
   library_index: 29
-  library_dep_index: 3
+  library_dep_index: 1
   library_dep_index: 30
-  library_dep_index: 2
+  library_dep_index: 0
   library_dep_index: 13
   library_dep_index: 10
 }
@@ -590,7 +590,7 @@ module_dependencies {
   dependency_index: 32
   dependency_index: 33
   dependency_index: 0
-  dependency_index: 2
+  dependency_index: 4
   dependency_index: 34
 }
 repositories {
@@ -606,16 +606,6 @@ repositories {
 repositories {
   maven_repo {
     url: "https://storage.googleapis.com/download.flutter.io"
-  }
-}
-repositories {
-  maven_repo {
-    url: "https://dl.google.com/dl/android/maven2/"
-  }
-}
-repositories {
-  maven_repo {
-    url: "https://repo.maven.apache.org/maven2/"
   }
 }
 repositories {
